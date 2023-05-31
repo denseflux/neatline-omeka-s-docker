@@ -21,7 +21,6 @@ services:
     volumes:
       - ./neatline_plugins/Neatline:/var/www/html/modules/Neatline
       - ./database.ini:/var/www/html/config/database.ini
-    restart: always
     environment:
       OMEKA_DB_HOST: ${OMEKA_DB_HOST}
       OMEKA_DB_USER: ${MYSQL_USER}
